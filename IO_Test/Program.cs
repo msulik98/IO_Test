@@ -27,7 +27,6 @@ namespace IO_Test
             {
                 suma += int.Parse(item);
             }
-            suma = 10;
             return suma;
         }
     }
