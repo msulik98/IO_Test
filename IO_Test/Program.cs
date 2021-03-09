@@ -16,9 +16,18 @@ namespace IO_Test
     {
         public static int  Calculate(string s)
         {
-			int n = int.Parse(s);
+            if (s == null) return 0;
+            else if (s.Length == 0) return 0;
 
-			return n;
+            string[] liczby = s.Split(',', '\n');
+            if (liczby.Length == 1) return int.Parse(liczby[0]);
+
+            int suma = 0;
+            foreach (var item in liczby)
+            {
+                suma += int.Parse(item);
+            } 
+            return suma;
         }
     }
 }
