@@ -26,7 +26,8 @@ namespace IO_Test
             foreach (var item in liczby)
             {
                 suma += int.Parse(item);
-            } 
+            }
+            suma = 10;
             return suma;
         }
     }
