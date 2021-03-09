@@ -37,19 +37,19 @@ namespace UnitTestProject1
             int result = Calculator.Calculate("1\n2");
             Assert.AreEqual(3, result);
         }
-        
-        //[TestMethod]
-        //public void TestCalculate_CorrectString3()
-        //{
-        //    int result = Calculator.Calculate("1,2,3");
-        //    Assert.AreEqual(3, result);
-        //}
-        //[TestMethod]
-        //public void TestCalculate_CorrectString4()
-        //{
-        //    int result = Calculator.Calculate("1,2,3");
-        //    Assert.AreEqual(3, result);
-        //}
+
+        [TestMethod]
+        public void TestCalculate_CorrectString3()
+        {
+            int result = Calculator.Calculate("1,2,3");
+            Assert.AreEqual(6, result);
+        }
+        [TestMethod]
+        public void TestCalculate_CorrectString4()
+        {
+            int result = Calculator.Calculate("1,2,3");
+            Assert.AreEqual(6, result);
+        }
         //[TestMethod]
         //[DataRow("1,2,3", 6)]
         //[DataRow("1,2\n,3", 6)]
